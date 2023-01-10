@@ -7,7 +7,7 @@ function App() {
   const [starships, setStarships] = useState([]);
   const [vehicles, setVehicles] = useState([]);
   const [films, setFilms] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchStarships() {
