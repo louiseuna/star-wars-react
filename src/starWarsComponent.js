@@ -1,7 +1,7 @@
 import React from "react";
 
-function starWarsComponent() {
+function StarWarsComponent() {
   return <div>hello from starWarsComponent.js</div>;
 }
 
-export default starWarsComponent;
+export default StarWarsComponent;

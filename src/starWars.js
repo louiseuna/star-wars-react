@@ -1,13 +1,12 @@
 import React from "react";
-import axios from "axios";
-import starWarsComponent from "./starWarsComponent.js";
+import StarWarsComponent from "./StarWarsComponent.js";
 import "./App.css";
 
 function StarWars() {
   return (
     <div>
       starWars.js here
-      <starWarsComponent />
+      <StarWarsComponent />
     </div>
   );
 }
