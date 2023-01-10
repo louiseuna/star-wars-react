@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import React, { useState, useEffect } from "react";
-import StarWars from "./starWars";
+import StarWars from "./StarWars";
 import "./App.css";
 
 function App() {
