@@ -22,19 +22,23 @@ export default function StarWars(props) {
 
     // let starship = response.data.results[i];
   }
-  function search() {
-    const apiKey = "starships";
-    let dataUrl = `https://swapi.dev/api/${apiKey}?format=json`;
-    axios.get(dataUrl).then(handleStarShips);
-  }
   search();
 
+  function search() {
+    // const apiKey = "starships";
+    let dataUrl = `https://swapi.dev/api/starships?format=json`;
+    axios.get(dataUrl).then(handleStarShips);
+  }
+
+  const toggleTable = (event) => {
+    event.currentTarget.classList.toggle("active");
+  };
+
+  console.log(props.starship);
   return (
-    <div className="form">
-      <div>
-        <button for="starwars">StarShips!</button>
-      </div>
-      <div>
+    <div className="inner-wrapper">
+      <button for="starwars" onClick={toggleTable}></button>
+      <div className="table-container">
         <table className="results">
           <tbody>
             <tr className="row top">
@@ -47,6 +51,16 @@ export default function StarWars(props) {
               <td className="heading">Passsenger Capacity:</td>
               <td className="heading">Cargo Capacity:</td>
             </tr>
+            {/* <tr className="row">
+              <td className="item">{starship.name}</td>
+              <td className="item">{starship.model}</td>
+              <td className="item">{starship.manufacturer}</td>
+              <td className="item">{starship.cost}</td>
+              <td className="item">{starship.length}</td>
+              <td className="item">{starship.crew}</td>
+              <td className="item">{starship.pax}</td>
+              <td className="item">{starship.cargo}</td>
+            </tr> */}
             <StarWarsComponent data={starship} />
           </tbody>
         </table>

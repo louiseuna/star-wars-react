@@ -41,7 +41,13 @@
   }
 }
 
-.form label {
+.inner-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.inner-wrapper label {
   display: block;
 }
 button {
@@ -55,15 +61,30 @@ button {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
+button:after {
+  content: "Click to see Starships";
+  transition: content 0.5s ease-in-out;
+}
+button.active:after {
+  content: "Click again to hide Starships";
+}
 button:hover {
   background-color: #000;
   border: 2px solid #ffe81f;
   color: #ffe81f;
 }
 
+button ~ .table-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+button.active ~ .table-container {
+  opacity: 1;
+}
+
 table.results {
   display: block;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -79,4 +100,22 @@ table.results td {
   box-sizing: border-box;
   background-color: #ffe81f70;
   color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .inner-wrapper {
+    max-width: 700px;
+  }
+  table.results .row.top {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .inner-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  table.results .row.top {
+    font-size: 12px;
+  }
 }

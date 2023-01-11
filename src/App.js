@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello From React!</p>
       <StarWars />
     </div>
   );
