@@ -60,3 +60,22 @@ button:hover {
   border: 2px solid #ffe81f;
   color: #ffe81f;
 }
+
+table.results {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+table.results .row.top {
+  background-color: #ffe81f;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+table.results td {
+  width: 12%;
+  padding: 2px 5px;
+  box-sizing: border-box;
+  background-color: #ffe81f70;
+  color: #000;
+}

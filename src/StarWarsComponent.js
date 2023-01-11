@@ -1,13 +1,17 @@
 import React from "react";
 
 export default function StarWarsComponent(props) {
-  // console.log(props);
+  console.log(props.data);
   return (
-    <div className="container">
-      <div className="container-inner">
-        Hi from StarWarsComponent!
-        <h2 className="name">Name: {props.name}</h2>
-      </div>
-    </div>
+    <tr className="row">
+      <td className="item">{props.data.name}</td>
+      <td className="item">{props.data.model}</td>
+      <td className="item">{props.data.manufacturer}</td>
+      <td className="item">{props.data.cost}</td>
+      <td className="item">{props.data.length}</td>
+      <td className="item">{props.data.crew}</td>
+      <td className="item">{props.data.pax}</td>
+      <td className="item">{props.data.cargo}</td>
+    </tr>
   );
 }
