@@ -65,6 +65,7 @@ table.results {
   display: block;
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 table.results .row.top {
   background-color: #ffe81f;

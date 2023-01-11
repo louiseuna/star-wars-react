@@ -35,7 +35,6 @@ export default function StarWars(props) {
         <button for="starwars">StarShips!</button>
       </div>
       <div>
-        starWars.js hereys
         <table className="results">
           <tbody>
             <tr className="row top">
