@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+README NOTES:
+During the development of this React app, I harnessed the api using axios and component states. I planned to first handle Starships, and repeat similar logic for Vehicles and Film.
+
+I tried several attempts to loop through the "starship" array in StarWars.js to attain data on more than one starship. In hindsight I should have considered treating this as a JSON object rather than an Array.
+
+My connection to the api needs addressing, as when deploying the app, only a white screen appeared, however it worked fine locally. Therefore, I have commented out my output of the api starship data unfortunately, but in favour of displaying just a snapshot of my skills in css.
+
+I have also included comments throughout my code of attempts and notes.
+
+If I had more time to complete this task, I would address and perfect the following:
+
+-- fix api endpoints
+-- include a search form rather than just a button and improve the interactiveness of the app.
+-- through the api, I could have used data from "planets" to control which currency to output on the "starships" and "vehicles" page, depending on which planet the manufacturer is from.
+-- use grid or flexbox rather than table to display results.
+-- vastly improve respoinsiveness.
+-- included some background music, or animation for the results to enter into view mimicking the iconic Star Wars credits.
